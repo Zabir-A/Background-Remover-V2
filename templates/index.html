@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>✂️ bgrmvr</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+      }
+
+      .drop-zone {
+        border: 2px dashed #ccc;
+        padding: 20px;
+        width: 80vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        /* / new items */
+        background-color: #fff;
+        border-radius: 10px;
+      }
+
+      .drop-zone.dragover {
+        background-color: #f0f0f0;
+      }
+
+      /* allign buttons to same row */
+      .button-row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007BFF;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      label.button {
+        display: inline-block;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007BFF;
+        color: #fff;
+        cursor: pointer;
+        font-size: 14px;
+        line-height: 1;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      h1 {
+        margin-top: 0; /* Adjust this value as needed */
+        margin-bottom: 0.1em;
+      }
+
+      h2 {
+        margin-top: 0; /* Adjust this value as needed */
+        margin-bottom: 0.1em;
+      }
+
+    </style>
+  </head>
+  <body>
+    
+    <div id="dropZone" class="drop-zone">
+      <h1>Z's</h1>
+      <h2>Magic Background Remover</h2>
+      <h2>✂️</h2>
+      <form
+        id="uploadForm"
+        action="/"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <!-- updated -->
+        <!-- <input id="fileInput" type="file" name="file" /> -->
+        <input id="fileInput" type="file" name="file" style="display: none;" />
+
+        <!-- moved button to div after form-->
+        <!-- <label for="fileInput" class="button">Browse</label> -->
+        
+        <!-- removed for testing -->
+        <!-- <input type="submit" value="rm" /> -->
+      </form>
+      <div class="button-row">
+        <!-- Browse button -->
+        <label for="fileInput" class="button">Browse Files</label>
+        <!-- Button to clear image  -->
+        <button id="clearButton">Clear</button>
+        <!-- button up upload (Download)  -->
+        <button id="uploadButton">Download</button>
+      </div>
+    </div>
+
+    <script>
+      let dropZone = document.getElementById("dropZone");
+      let fileInput = document.getElementById("fileInput");
+      let uploadForm = document.getElementById("uploadForm");
+      // Added Clear Button tp remove image
+      let clearButton = document.getElementById("clearButton")
+      // Added manual submit button (Download)
+      let uploadButton = document.getElementById("uploadButton");
+
+      clearButton.addEventListener("click", function (e) {
+        // clear the file input
+        e.stopPropagation();
+        fileInput.value = "";
+        document.querySelector('label[for="fileInput"]').textContent = "Browse Files";
+      });
+
+      // submit button event listener (Donwload)
+      uploadButton.addEventListener("click", function (e) {
+        e.stopPropagation();
+      // Submit the form
+        uploadForm.submit();
+        alert("Image Downloaded!")
+        fileInput.value = "";
+        document.querySelector('label[for="fileInput"]').textContent = "Browse Files";
+      });
+
+      dropZone.addEventListener("click", function () {
+        fileInput.click();
+      });
+
+      fileInput.addEventListener("change", function () {
+        if (fileInput.files.length > 0) {
+          // commented out to test manual upload button
+          // uploadForm.submit();
+        }
+      });
+
+      dropZone.addEventListener("dragover", function (e) {
+        this.classList.add("dragover");
+        // Added to prevent browser from opening up picture in tab instead
+        e.preventDefault();
+
+      });
+
+      dropZone.addEventListener("dragleave", function (e) {
+        this.classList.remove("dragover");
+      });
+
+      dropZone.addEventListener("drop", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        this.classList.remove("dragover");
+        let file = e.dataTransfer.files[0];
+        fileInput.files = e.dataTransfer.files;
+        uploadForm.submit();
+
+        // alert
+        alert("Image Downloaded!")
+      });
+
+        // Added this at the end
+      document.getElementById('fileInput').addEventListener('change', function(e) {
+        let fileName = e.target.files[0].name;
+        document.querySelector('label[for="fileInput"]').textContent = fileName;
+    });
+    </script>
+  </body>
+</html>
