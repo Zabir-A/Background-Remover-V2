@@ -3,9 +3,7 @@ This is a simple Flask web application that utilizes [Rembg](https://github.com/
 It is based on the project found at [codediodeio/rembg-webapp-tutorial](https://github.com/codediodeio/rembg-webapp-tutorial ) with some modifications and minor changes.
 
 ## Application Demo
-![Alt text](demo_1.gif)
-
-![Alt text](demo_2.gif)
+![Alt text](demo.gif)
 
 Simply drag and drop an image or browse from files, wait for the application to process and it will download. 
 
