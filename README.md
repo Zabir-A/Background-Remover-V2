@@ -25,8 +25,8 @@ docker build -t <your-image-name>:<tag> .
 docker run -d -p <host-port>:<container-port> --name <your-container-name> <your-image-name>:<tag>
 ```
 
-### Running on ARM Architecture:
-#### If you want to run the application on ARM architecture, such as a Raspberry Pi, change the Dockerfile content as shown below:
+## Running on ARM Architecture:
+### If you want to run the application on ARM architecture, such as a Raspberry Pi, change the Dockerfile content as shown below:
 ```
 FROM python:3.8-slim
 
@@ -48,11 +48,11 @@ EXPOSE 5100
 
 CMD ["python", "app.py"]
 ```
-## 1. Build the image for ARM architecture
+1. Build the image for ARM architecture
 ```
 docker run -d -p <host-port>:<container-port> --name <your-arm-container-name> <your-arm-image-name>
 ```
-## 2. Run the Docker container
+2. Run the Docker container
 ```
 docker run -d -p <host-port>:<container-port> --name <your-arm-container-name> <your-arm-image-name>
 ```
