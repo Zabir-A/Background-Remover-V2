@@ -79,7 +79,7 @@ docker run -d -p <host-port>:<container-port> --name <your-arm-container-name> <
 
 ## (Not Recommended)
 
-For those that don't want to go through the trouble, and just want to test it (for fun), there is an packaged executable for the application.
+For those that don't want to go through the trouble, and just want to test it (for fun), there is an executable for the packaged application.
 
 Obviously, this is not how any Web Application (in development) should be used, but, "it just works". 
 
