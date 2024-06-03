@@ -107,3 +107,5 @@ So, use it at your own risk.
 4. Clicking the link (address) will open up the application in your default browser.
 
 ![Alt text](webapp.jpg)
+
+5. If you made it this far, congrats! Here's a 🍪
