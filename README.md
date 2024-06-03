@@ -2,6 +2,10 @@ A simple flask app to remove the background of an image with [Rembg](https://git
 
 Based on https://github.com/codediodeio/rembg-webapp-tutorial with some modifications
 
+## Application Demo
+![Alt text](demo.gif)
+
+Simply drag and drop an image or browse from files, wait for the application to process and it will download. 
 
 ## Running application locally
 
@@ -56,9 +60,3 @@ docker run -d -p <host-port>:<container-port> --name <your-arm-container-name> <
 ```
 docker run -d -p <host-port>:<container-port> --name <your-arm-container-name> <your-arm-image-name>
 ```
-
-## Application Demo
-![Alt text](demo.gif)
-
-Simply drag and drop an image or browse from files, wait for the application to process and it will download. 
-
