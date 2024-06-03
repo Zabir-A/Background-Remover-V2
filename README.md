@@ -79,7 +79,7 @@ docker run -d -p <host-port>:<container-port> --name <your-arm-container-name> <
 ```
 
 
-## Downloading the package application (EXE):
+## Downloading the packaged application (EXE):
 
 1. Download the executable from:
 
