@@ -85,7 +85,9 @@ docker run -d -p <host-port>:<container-port> --name <your-arm-container-name> <
 
 There's a packaged executable version of the application for those that don't want to go through all that, and just want to test it (for fun).
 
-Obviously, this is not how any Web Application (in development) should be used, but, "it just works". So, use it at your own risk. 
+Obviously, this is not how any Web Application (in development) should be used, but, "it just works". 
+
+So, use it at your own risk. 
 
 ## Downloading the packaged application (BgRmvr.exe):
 
