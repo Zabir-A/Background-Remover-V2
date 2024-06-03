@@ -1,6 +1,6 @@
 This is a simple Flask web application that utilizes [Rembg](https://github.com/danielgatis/rembg) to remove the background of an image.
 
-It is based on the tutorial found at codediodeio/rembg-webapp-tutorial with some modifications
+It is based on the tutorial found at [codediodeio/rembg-webapp-tutorial](https://github.com/codediodeio/rembg-webapp-tutorial ) with some modifications
 
 ## Application Demo
 ![Alt text](demo.gif)
