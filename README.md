@@ -21,7 +21,7 @@ Simply drag and drop an image or browse from files, wait for the application to 
 ```
 git clone https://github.com/Zabir-A/Background-Remover-V2/
 ```
-3. Download u2net.onnx into the root project directory
+2. Download u2net.onnx into the root project directory
 ```
 wget https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx
 ```
