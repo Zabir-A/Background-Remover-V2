@@ -77,3 +77,25 @@ docker build --tag <your-image-name>:<tag> --platform linux/arm64 .
 ```
 docker run -d -p <host-port>:<container-port> --name <your-arm-container-name> <your-arm-image-name>
 ```
+
+
+## Downloading the package application (EXE):
+
+1. Download the executable from:
+
+https://github.com/Zabir-A/Background-Remover-V2/releases/tag/v0.2.0-alpha
+
+![Alt text](download_exe_page.jpg)
+
+
+2. Run the BgRmvr.exe. It will open up your terminal. Wait a few seconds, a prompt may pop up. Click allow. 
+
+![Alt text](allow_prompt.jpg)
+
+3. Ctrl + Right Click the address
+   
+![Alt text](link.jpg)
+
+4. Clicking the link will open up the application in your default browser.
+
+![Alt text](webapp.jpg)
