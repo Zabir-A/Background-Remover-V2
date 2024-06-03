@@ -46,7 +46,7 @@ docker build -t <your-image-name>:<tag> .
 docker run -d -p <host-port>:<container-port> --name <your-container-name> <your-image-name>:<tag>
 ```
 
-## Running on ARM Architecture 🍓🥧
+## Running on ARM Platforms 🍓🥧
 ### If you want to run the application on ARM architecture, such as a Raspberry Pi, change the Dockerfile content as shown below:
 ```
 FROM python:3.8-slim
@@ -77,9 +77,13 @@ docker build --tag <your-image-name>:<tag> --platform linux/arm64 .
 ```
 docker run -d -p <host-port>:<container-port> --name <your-arm-container-name> <your-arm-image-name>
 ```
+# Windows Installation & Usage (Lazy Way - Not Recommended)
 
+I have included a packaged executable version of the application for those that don't want to go through all that, and just want to test it.
 
-## Downloading the packaged application (EXE):
+Obviously, this is not how the Web Application should be installed or run, but it works. It will run Flask in a development server, so use it at your risk. 
+
+## Downloading the packaged application (BgRmvr.exe):
 
 1. Download the executable from: https://github.com/Zabir-A/Background-Remover-V2/releases/download/v0.2.0-alpha/BgRmvr.exe
 
