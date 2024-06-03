@@ -1,6 +1,6 @@
-This is a web application that utilizes [Rembg](https://github.com/danielgatis/rembg) to remove the background of an image using "AI sorcery" (not).
+This is a web application that removes the background of an image using "AI sorcery".
 
-It's based on the project done by https://github.com/codediodeio with some minor changes and bug fixes.
+It utilizes the tool [Rembg](https://github.com/danielgatis/rembg) and project done by codediodeio with some minor changes and bug fixes.
 
 ## Application Demo
 Simply drag and drop an image, or browse from files. Wait for the application to process and it will download automatically. 
