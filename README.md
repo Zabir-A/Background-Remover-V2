@@ -77,11 +77,15 @@ docker run -d -p <host-port>:<container-port> --name <your-arm-container-name> <
 
 ## (Not Recommended)
 
-For those that don't want to go through the troubles, and just want to test it briefly (for fun). There is an executable for the packaged web application.
+For those that don't want to go through the troubles, and just want to test it briefly. There is an executable for the packaged web application.
 
-Obviously, this is not how any Web Application (in development) should be used, ever. However, "it just works", for demonstration and testing purposes.
+Obviously, this is not how any Web Application (especially, in development) should be used, **ever.**
 
-Please use it at your own risk, as the server only uses HTTP.
+But, for demonstration and testing purposes, "it just works".
+
+**Please use it at your own risk.**
+
+**The Flask server only uses HTTP.**
 
 ## Downloading the packaged application (BgRmvr.exe):
 
