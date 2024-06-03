@@ -3,7 +3,7 @@ This is a web application that utilizes [Rembg](https://github.com/danielgatis/r
 It's based on the project found at [codediodeio/rembg-webapp-tutorial](https://github.com/codediodeio/rembg-webapp-tutorial) with some modifications and minor changes.
 
 ## Application Demo
-Simply drag and drop an image or browse from files, wait for the application to process and it will download. 
+Simply drag and drop an image, or browse from files. Wait for the application to process and it will download automatically. 
 
 ### Original Image 🐕
 
@@ -83,7 +83,7 @@ docker run -d -p <host-port>:<container-port> --name <your-arm-container-name> <
 
 ## (Not Recommended)
 
-There's a packaged executable version of the application for those that don't want to go through all that, and just want to test it (for fun).
+For those that don't want to go through all that, and just want to test it (for fun). There's a packaged executable version of the application.
 
 Obviously, this is not how any Web Application (in development) should be used, but, "it just works". 
 
@@ -96,7 +96,7 @@ So, use it at your own risk.
 ![Alt text](download_exe_page.jpg)
 
 
-2. Run BgRmvr.exe. It will open up CMD, PowerShell or whatever terminal you have. Wait a few seconds, a window prompt may pop up. Click allow. if you don't, it will not work.
+2. Run BgRmvr.exe. It will open up CMD, PowerShell or whatever terminal you have. Wait a few seconds, a window prompt may pop up. Click allow. If you don't, it will not work.
 
 ![Alt text](allow_prompt.jpg)
 
