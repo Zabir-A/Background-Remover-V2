@@ -6,6 +6,12 @@ It is based on the project found at [codediodeio/rembg-webapp-tutorial](https://
 
 Simply drag and drop an image or browse from files, wait for the application to process and it will download. 
 
+Original Image
+[Alt text](demo_1.gif)
+
+Downloaded Image
+[Alt text](demo_2.gif)
+
 ## Running the application locally
 
 1. Clone: https://github.com/Zabir-A/Background-Remover-V2/
