@@ -9,23 +9,21 @@ Simply drag and drop an image, or browse from files. Wait for the application to
 
 ![Alt text](demo_1.gif)
 
-
-
 ### Downloaded Image 🐶
 
 ![Alt text](demo_2.gif)
 
-## Running the application locally
+## Running the application locally using Python 🐍
 
-1. Download & copy the u2net.onnx model into the project's root directory
+1. Download & copy over the u2net.onnx model into the project's root directory / folder:
 ```
 wget https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx
 ```
-2. Install Python dependencies 🐍
+2. Install Python dependencies:
 ```
 pip install -r requirements.txt
 ```
-3. Run Python script 🐍
+3. Run Python script:
 ```
 python app.py
 ```
@@ -67,23 +65,23 @@ EXPOSE 5100
 
 CMD ["python", "app.py"]
 ```
-1. Build the image for ARM Platform (linux/arm64)
+1. Build the image for ARM Platform (linux/arm64):
 ```
 docker build --tag <your-image-name>:<tag> --platform linux/arm64 .
 ```
-2. Run the Docker container
+2. Run the Docker container:
 ```
 docker run -d -p <host-port>:<container-port> --name <your-arm-container-name> <your-arm-image-name>
 ```
-# Windows Installation & Usage
+# Windows Installation
 
 ## (Not Recommended)
 
-For those that don't want to go through the trouble, and just want to test it (for fun), there is an executable for the packaged application.
+For those that don't want to go through the troubles, and just want to test it briefly (for fun). There is an executable for the packaged web application.
 
-Obviously, this is not how any Web Application (in development) should be used, but, "it just works". 
+Obviously, this is not how any Web Application (in development) should be used, ever. However, "it just works", for demonstration and testing purposes.
 
-Please use it at your own risk. 
+Please use it at your own risk, as the server only uses HTTP.
 
 ## Downloading the packaged application (BgRmvr.exe):
 
@@ -103,4 +101,4 @@ Please use it at your own risk.
 
 ![Alt text](webapp.jpg)
 
-5. If you made it this far, congrats! Here's a 🍪❤️
+5. If you made it this far, congrats! Here's a 🍪
