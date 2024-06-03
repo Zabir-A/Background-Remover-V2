@@ -4,6 +4,7 @@ It is based on the project found at [codediodeio/rembg-webapp-tutorial](https://
 
 ## Application Demo
 ![Alt text](demo_1.gif)
+
 ![Alt text](demo_2.gif)
 
 Simply drag and drop an image or browse from files, wait for the application to process and it will download. 
