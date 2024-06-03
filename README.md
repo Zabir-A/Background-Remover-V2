@@ -54,7 +54,7 @@ CMD ["python", "app.py"]
 ```
 1. Build the image for ARM architecture
 ```
-docker run -d -p <host-port>:<container-port> --name <your-arm-container-name> <your-arm-image-name>
+docker build --tag <your-image-name>:<tag> --platform linux/arm64 .
 ```
 2. Run the Docker container
 ```
