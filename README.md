@@ -17,13 +17,19 @@ Simply drag and drop an image or browse from files, wait for the application to 
 
 ## Running the application locally
 
-1. Download / clone the project: https://github.com/Zabir-A/Background-Remover-V2/
-2. Download / wget: https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx into the project directory
+1. Download / clone the project
+```
+git clone https://github.com/Zabir-A/Background-Remover-V2/
+```
+3. Download u2net.onnx into the root project directory
+```
+wget https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx
+```
 3. Install Python dependencies
 ```
 pip install -r requirements.txt
 ```
-4. Run the Python script 
+4. Run Python script 
 ```
 python app.py
 ```
