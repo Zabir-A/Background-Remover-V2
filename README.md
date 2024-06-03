@@ -79,11 +79,11 @@ docker build --tag <your-image-name>:<tag> --platform linux/arm64 .
 ```
 docker run -d -p <host-port>:<container-port> --name <your-arm-container-name> <your-arm-image-name>
 ```
-# Windows Installation & Usage (Lazy Way - Not Recommended)
+# Windows Installation & Usage (Not Recommended)
 
-I have included a packaged executable version of the application for those that don't want to go through all that, and just want to test it.
+There's a packaged executable version of the application for those that don't want to go through all that, and just want to test it (for fun).
 
-Obviously, this is not how the Web Application should be installed or run, but it works, so use it at your own risk. 
+Obviously, this is not how any Web Application (in development) should be installed or run, but "it just works", so use it at your own risk. 
 
 ## Downloading the packaged application (BgRmvr.exe):
 
