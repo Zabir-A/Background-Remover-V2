@@ -1,6 +1,6 @@
-This is a simple Flask web application that utilizes [Rembg](https://github.com/danielgatis/rembg) to remove the background of an image.
+This is a web application that utilizes [Rembg](https://github.com/danielgatis/rembg) to remove the background of an image using "AI" magic sorcery (not).
 
-It is based on the project found at [codediodeio/rembg-webapp-tutorial](https://github.com/codediodeio/rembg-webapp-tutorial ) with some modifications and minor changes.
+It's based on the project found at [codediodeio/rembg-webapp-tutorial](https://github.com/codediodeio/rembg-webapp-tutorial) with some modifications and minor changes.
 
 ## Application Demo
 Simply drag and drop an image or browse from files, wait for the application to process and it will download. 
@@ -47,9 +47,9 @@ docker run -d -p <host-port>:<container-port> --name <your-container-name> <your
 ```
 
 ## Running on ARM Platforms 🍓🥧
-#### If you want to run the containerized application on a Raspberry Pi. 
+#### If you want to run the containerized application on a Raspberry Pi (4+). 
 
-#### Change the Dockerfile content as shown below:
+#### Change the default Dockerfile content as shown below:
 ```
 FROM python:3.8-slim
 
@@ -79,11 +79,13 @@ docker build --tag <your-image-name>:<tag> --platform linux/arm64 .
 ```
 docker run -d -p <host-port>:<container-port> --name <your-arm-container-name> <your-arm-image-name>
 ```
-# Windows Installation & Usage (Not Recommended)
+# Windows Installation & Usage
+
+## (Not Recommended)
 
 There's a packaged executable version of the application for those that don't want to go through all that, and just want to test it (for fun).
 
-Obviously, this is not how any Web Application (in development) should be installed or run, but "it just works", so use it at your own risk. 
+Obviously, this is not how any Web Application (in development) should be used, but, "it just works". So, use it at your own risk. 
 
 ## Downloading the packaged application (BgRmvr.exe):
 
@@ -92,14 +94,14 @@ Obviously, this is not how any Web Application (in development) should be instal
 ![Alt text](download_exe_page.jpg)
 
 
-2. Run the BgRmvr.exe. It will open up your terminal. Wait a few seconds, a prompt may pop up. Click allow. 
+2. Run BgRmvr.exe. It will open up CMD, PowerShell or whatever terminal you have. Wait a few seconds, a window prompt may pop up. Click allow. if you don't, it will not work.
 
 ![Alt text](allow_prompt.jpg)
 
-3. Ctrl + Right Click the address
+3. Ctrl + Right Click one of the addresses.
    
 ![Alt text](link.jpg)
 
-4. Clicking the link will open up the application in your default browser.
+4. Clicking the link (address) will open up the application in your default browser.
 
 ![Alt text](webapp.jpg)
