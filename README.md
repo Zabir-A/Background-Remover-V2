@@ -81,9 +81,7 @@ docker run -d -p <host-port>:<container-port> --name <your-arm-container-name> <
 
 ## Downloading the packaged application (EXE):
 
-1. Download the executable from:
-
-https://github.com/Zabir-A/Background-Remover-V2/releases/tag/v0.2.0-alpha
+1. Download the executable from: https://github.com/Zabir-A/Background-Remover-V2/releases/download/v0.2.0-alpha/BgRmvr.exe
 
 ![Alt text](download_exe_page.jpg)
 
