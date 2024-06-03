@@ -47,7 +47,9 @@ docker run -d -p <host-port>:<container-port> --name <your-container-name> <your
 ```
 
 ## Running on ARM Platforms 🍓🥧
-#### If you want to run the containerized application on a Raspberry Pi. Change the Dockerfile content as shown below:
+#### If you want to run the containerized application on a Raspberry Pi. 
+
+### Change the Dockerfile content as shown below:
 ```
 FROM python:3.8-slim
 
