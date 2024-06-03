@@ -25,16 +25,16 @@ git clone https://github.com/Zabir-A/Background-Remover-V2/
 ```
 wget https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx
 ```
-3. Install Python dependencies
+3. Install Python dependencies 🐍
 ```
 pip install -r requirements.txt
 ```
-4. Run Python script 
+4. Run Python script 🐍
 ```
 python app.py
 ```
 
-## Running the application in a Docker container 
+## Running the application in a Docker Container 🐋
 
 1. Build the image:
 ```
@@ -46,7 +46,7 @@ docker build -t <your-image-name>:<tag> .
 docker run -d -p <host-port>:<container-port> --name <your-container-name> <your-image-name>:<tag>
 ```
 
-## Running on ARM Architecture:
+## Running on ARM Architecture 🍓🥧
 ### If you want to run the application on ARM architecture, such as a Raspberry Pi, change the Dockerfile content as shown below:
 ```
 FROM python:3.8-slim
