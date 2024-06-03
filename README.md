@@ -5,13 +5,13 @@ It is based on the project found at [codediodeio/rembg-webapp-tutorial](https://
 ## Application Demo
 Simply drag and drop an image or browse from files, wait for the application to process and it will download. 
 
-### Original Image
+### Original Image 🐕
 
 ![Alt text](demo_1.gif)
 
 
 
-### Downloaded Image
+### Downloaded Image 🐶
 
 ![Alt text](demo_2.gif)
 
