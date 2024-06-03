@@ -69,7 +69,7 @@ EXPOSE 5100
 
 CMD ["python", "app.py"]
 ```
-1. Build the image for ARM architecture
+1. Build the image for ARM Platforms
 ```
 docker build --tag <your-image-name>:<tag> --platform linux/arm64 .
 ```
@@ -81,7 +81,7 @@ docker run -d -p <host-port>:<container-port> --name <your-arm-container-name> <
 
 I have included a packaged executable version of the application for those that don't want to go through all that, and just want to test it.
 
-Obviously, this is not how the Web Application should be installed or run, but it works. It will run Flask in a development server, so use it at your risk. 
+Obviously, this is not how the Web Application should be installed or run, but it works, so use it at your own risk. 
 
 ## Downloading the packaged application (BgRmvr.exe):
 
