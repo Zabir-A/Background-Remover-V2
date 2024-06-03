@@ -17,19 +17,15 @@ Simply drag and drop an image, or browse from files. Wait for the application to
 
 ## Running the application locally
 
-1. Download / clone the project
-```
-git clone https://github.com/Zabir-A/Background-Remover-V2/
-```
-2. Download u2net.onnx into the root project directory
+1. Download & copy the u2net.onnx model into the project's root directory
 ```
 wget https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx
 ```
-3. Install Python dependencies 🐍
+2. Install Python dependencies 🐍
 ```
 pip install -r requirements.txt
 ```
-4. Run Python script 🐍
+3. Run Python script 🐍
 ```
 python app.py
 ```
@@ -47,7 +43,7 @@ docker run -d -p <host-port>:<container-port> --name <your-container-name> <your
 ```
 
 ## Running on ARM Platforms 🍓🥧
-#### If you want to run the containerized application on a Raspberry Pi (4+). 
+#### If you want to run the containerized application on a Raspberry Pi 4/5.
 
 #### Change the default Dockerfile content as shown below:
 ```
@@ -71,7 +67,7 @@ EXPOSE 5100
 
 CMD ["python", "app.py"]
 ```
-1. Build the image for ARM Platforms
+1. Build the image for ARM Platform (linux/arm64)
 ```
 docker build --tag <your-image-name>:<tag> --platform linux/arm64 .
 ```
@@ -83,11 +79,11 @@ docker run -d -p <host-port>:<container-port> --name <your-arm-container-name> <
 
 ## (Not Recommended)
 
-For those that don't want to go through all that, and just want to test it (for fun). There's a packaged executable version of the application.
+For those that don't want to go through the trouble, and just want to test it (for fun), there is an packaged executable for the application.
 
 Obviously, this is not how any Web Application (in development) should be used, but, "it just works". 
 
-So, use it at your own risk. 
+Please use it at your own risk. 
 
 ## Downloading the packaged application (BgRmvr.exe):
 
@@ -95,8 +91,7 @@ So, use it at your own risk.
 
 ![Alt text](download_exe_page.jpg)
 
-
-2. Run BgRmvr.exe. It will open up CMD, PowerShell or whatever terminal you have. Wait a few seconds, a window prompt may pop up. Click allow. If you don't, it will not work.
+2. Run BgRmvr.exe. It will open up the terminal or CMD (CLI). Wait a few seconds, a window prompt may pop up. Click allow.
 
 ![Alt text](allow_prompt.jpg)
 
@@ -108,4 +103,4 @@ So, use it at your own risk.
 
 ![Alt text](webapp.jpg)
 
-5. If you made it this far, congrats! Here's a 🍪
+5. If you made it this far, congrats! Here's a 🍪❤️
