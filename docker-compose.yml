@@ -1,0 +1,10 @@
+services:
+  bgrmvr:
+    build: .
+    container_name: bgrmvr
+    ports:
+      - "5200:5100"
+    volumes:
+      - ~/.u2net:/root/.u2net
+    restart: always
+    command: python app.py
