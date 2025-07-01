@@ -1,10 +1,23 @@
+# services:
+#   bgrmvr:
+#     build: .
+#     container_name: bgrmvr
+#     ports:
+#       - "5200:5100"
+#     volumes:
+#       - ~/.u2net:/root/.u2net
+#     restart: always
+#     command: python app.py
+
+version: "3.8"
+
 services:
   bgrmvr:
-    build: .
+    image: zabirahasan/bgrmvr-arm64:latest
     container_name: bgrmvr
     ports:
-      - "5200:5100"
+      - "5200:5100"  # Host:Container
     volumes:
-      - ~/.u2net:/root/.u2net
+      - ~/.u2net:/root/.u2net   # Persist model file
     restart: always
     command: python app.py
